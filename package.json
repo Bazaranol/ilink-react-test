@@ -19,6 +19,7 @@
    "scripts": {
       "format": "prettier --write src/**/*.ts{,x}",
       "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
+      "lintPrettier": "prettier --check .",
       "start": "react-scripts start",
       "build": "react-scripts build",
       "test": "react-scripts test",
@@ -50,6 +51,11 @@
       "prettier": "2.4.1",
       "prettier-eslint": "^13.0.0",
       "prettier-eslint-cli": "^5.0.1"
+   },
+   "husky": {
+      "hooks": {
+         "pre-commit": "lint-staged"
+      }
    },
    "lint-staged": {
       "**/*": "prettier --write --ignore-unknown"
