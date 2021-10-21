@@ -1,0 +1,20 @@
+.btn1 {
+    margin: 5px;
+    color: white;
+    background: #5c98f1;
+    width: 233px;
+    height: 56px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+.btn1:hover {
+    background: #4583de;
+}
+.btn1:active {
+    background: #2c6ac7;
+}
+.btn1:disabled,
+.disabled,
+button[disabled] {
+    background: #d1d1d1;
+}
