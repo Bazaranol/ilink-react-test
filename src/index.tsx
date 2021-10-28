@@ -6,12 +6,21 @@ import "./fonts/fonts.css"
 import reportWebVitals from "./reportWebVitals"
 import { LoginPage } from "./pages/Login/LoginPage"
 import { ChatPage } from "./pages/Chat/ChatPage"
+import { Route, BrowserRouter as Router, Redirect } from "react-router-dom"
 
 ReactDOM.render(
     <React.StrictMode>
         {/* <App /> */}
-        {/* <LoginPage /> */}
-        <ChatPage />
+
+        <Router>
+            <Redirect to="/auth" />
+            <Route path="/auth">
+                <LoginPage />
+            </Route>
+            <Route path="/chat">
+                <ChatPage />
+            </Route>
+        </Router>
     </React.StrictMode>,
     document.getElementById("root")
 )
