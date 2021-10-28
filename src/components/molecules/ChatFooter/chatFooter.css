@@ -1,0 +1,38 @@
+.chatFooter {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.file {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(./file.svg);
+}
+.sendMessage {
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(./sendFile.svg);
+}
+.chatInput {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #cacaca;
+    border: none;
+    width: 100%;
+    background-color: initial;
+}
+.chatInput:focus,
+.chatInput:active {
+    outline: none;
+    color: black;
+}

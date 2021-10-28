@@ -1,0 +1,14 @@
+.userLogo {
+    background-image: url(./male-logo.svg);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-size: 100%;
+    margin-right: 12px;
+}
+.userLogo[data-sex="male"] {
+    background-image: url(./male-logo.svg);
+}
+.userLogo[data-sex="female"] {
+    background-image: url(./female-logo.svg);
+}

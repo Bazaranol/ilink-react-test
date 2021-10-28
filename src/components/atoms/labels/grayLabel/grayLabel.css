@@ -1,0 +1,15 @@
+.grayLabel {
+    font-family: Montserrat;
+    color: #949494;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    pointer-events: none;
+}
+.active {
+    color: white;
+}
+[data-size="16"] {
+    font-size: 16px;
+}

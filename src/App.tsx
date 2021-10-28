@@ -1,12 +1,11 @@
 import React from "react"
 import logo from "./logo.svg"
 import "./App.css"
-import { TextLabel } from "./components/atoms/labels/TextLabel"
-import { Button } from "./components/atoms/buttons/Button"
-import ButtonSubmit from "./components/atoms/buttons/ButtonSubmit"
-import { InputLogin } from "./components/atoms/inputs/InputLogin"
 import "./fonts/fonts.css"
 import { AutorizeForm } from "./components/organisms/autorize/AutorizeForm"
+import { MainLogo } from "./components/atoms/logos/mainLogo/MainLogo"
+import { AccountLogo } from "./components/atoms/logos/accountLogo/AccountLogo"
+import { LoginTitle } from "./components/molecules/LoginTitle/LoginTitle"
 
 function App(): JSX.Element {
     return (
@@ -19,6 +18,9 @@ function App(): JSX.Element {
                 <ButtonSubmit text={"submit"} />
                 <InputLogin placeholder={"Input user name"}></InputLogin> */}
                 <AutorizeForm />
+                <MainLogo />
+                <AccountLogo />
+                <LoginTitle />
             </header>
         </div>
     )

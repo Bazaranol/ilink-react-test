@@ -1,0 +1,8 @@
+.userLabel {
+    padding: 12px 0px 12px 24px;
+    display: flex;
+    flex: column;
+}
+.active {
+    background-color: #5c98f1;
+}

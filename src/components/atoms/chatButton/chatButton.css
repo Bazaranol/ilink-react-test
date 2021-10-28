@@ -1,0 +1,15 @@
+.chatBtn {
+    font-family: Montserrat;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #5e93e7;
+    box-sizing: border-box;
+    border-radius: 32px;
+    text-align: center;
+    padding: 20px;
+}
+.chatBtn:hover {
+    background: rgba(225, 245, 251, 0.5);
+}
+.chatBtn:active {
+    background: rgba(206, 242, 253, 0.5);
+}

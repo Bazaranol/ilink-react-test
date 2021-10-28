@@ -2,7 +2,7 @@ import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import "./input.css";
 
-export interface IInputLogin {
+interface IInputLogin {
     value?: string;
     placeholder?: string;
 }
@@ -12,21 +12,21 @@ type Inputs = {
     exampleRequired: string;
 };
 
-export const InputLogin = (input: IInputLogin) => {
+export const InputLogin: React.FC<IInputLogin> = ({ placeholder }) => {
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm<Inputs>();
 
-    const onSubmit: SubmitHandler<Inputs> = (data) => {
+    const onSubmit: SubmitHandler<Inputs> = () => {
         //alert(JSON.stringify(data));
     };
     return (
         <form onChange={handleSubmit(onSubmit)}>
             <input
                 type="text"
-                placeholder={input.placeholder}
+                placeholder={placeholder}
                 className={
                     errors.exampleRequired ? "inputLoginInvalid" : "inputLogin"
                 }
