@@ -1,26 +1,13 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import "./index.css"
-import App from "./App"
 import "./fonts/fonts.css"
 import reportWebVitals from "./reportWebVitals"
-import { LoginPage } from "./pages/Login/LoginPage"
-import { ChatPage } from "./pages/Chat/ChatPage"
-import { Route, BrowserRouter as Router, Redirect } from "react-router-dom"
+import { Routes } from "./routes"
 
 ReactDOM.render(
     <React.StrictMode>
-        {/* <App /> */}
-
-        <Router>
-            <Redirect to="/auth" />
-            <Route path="/auth">
-                <LoginPage />
-            </Route>
-            <Route path="/chat">
-                <ChatPage />
-            </Route>
-        </Router>
+        <Routes />
     </React.StrictMode>,
     document.getElementById("root")
 )

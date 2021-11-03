@@ -3,6 +3,9 @@
     display: flex;
     flex: column;
 }
+.userLabel:hover {
+    background-color: #e1ecfe;
+}
 .active {
     background-color: #5c98f1;
 }

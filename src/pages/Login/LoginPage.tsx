@@ -20,7 +20,6 @@ export const LoginPage: React.FC = () => {
 
             <div className="loginPageMobile">
                 <div className="topBlock">
-                    {/* <div className="picMobile"></div> */}
                     <LoginTitle />
                 </div>
                 <div className="bottomBlock">

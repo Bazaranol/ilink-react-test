@@ -1,8 +1,20 @@
-.chatContent {
-    background-image: url(./bg.svg);
+.chatContentNone {
+    display: none;
+    background-color: #eff5ff;
+    background-image: url(./background.svg);
     background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+.chatContent {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    overflow: auto;
+    background-color: #eff5ff;
+    background-image: url(./background.svg);
+    background-size: 100%;
+    padding: 20px;
 }

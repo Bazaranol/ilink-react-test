@@ -1,0 +1,57 @@
+.myMessage {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.friendMessage {
+    display: flex;
+    align-items: center;
+}
+.msgRight {
+    position: relative;
+    border: 1px solid #c5daff;
+    background: #e1ecfe;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    float: left;
+    min-height: 50px;
+    min-width: 75px;
+    max-width: 60%;
+}
+.msgLeft {
+    position: relative;
+    border: 1px solid #c5daff;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    float: left;
+    min-height: 50px;
+    min-width: 75px;
+    max-width: 60%;
+}
+.msgLeft::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0.6em solid #fff;
+    border-color: #fff #fff transparent transparent;
+    top: 0;
+    left: -0.9em;
+}
+.msgRight::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0.6em solid #e1ecfe;
+    border-color: #e1ecfe transparent transparent #e1ecfe;
+    top: 0;
+    right: -0.9em;
+}
